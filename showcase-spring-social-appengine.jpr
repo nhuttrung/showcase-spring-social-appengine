@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jpr:project xmlns:jpr="http://xmlns.oracle.com/ide/project">
+   <hash n="component-versions">
+      <value n="oracle.ide.model.Project" v="12.1.3.0.0;12.2.1.0.0"/>
+      <value n="oracle.ide.model.ResourcePathsMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.ideimpl.model.TechnologyScopeUpdateMigrator" v="11.1.2.0.0.5;11.1.2.0.0.6"/>
+      <value n="oracle.jdeveloper.library.ProjectLibraryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdeveloper.model.OutputDirectoryMigrator" v="11.1.1.1.0"/>
+      <value n="oracle.jdevimpl.deploy.migrators.DeploymentMigrator" v="12.1.2.0.1"/>
+   </hash>
+   <list n="contentSets">
+      <string v="oracle.jdeveloper.model.PathsConfiguration/javaContentSet"/>
+      <string v="oracle.ide.model.ResourcePaths/resourcesContentSet"/>
+   </list>
+   <value n="defaultPackage" v="vn.khtt"/>
+   <hash n="oracle.ide.model.DependencyConfiguration">
+      <list n="dependencyList">
+         <hash>
+            <hash n="dependable">
+               <url n="sourceOwnerURL" path="../Libraries.jws"/>
+               <url n="sourceURL" path="../spring-gae/spring-gae.jpr"/>
+            </hash>
+            <value n="recognizerId" v="oracle.jdeveloper.library"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.ide.model.ResourcePaths">
+      <hash n="resourcesContentSet">
+         <list n="constituent-sets">
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+*"/>
+               </list>
+               <list n="url-path">
+                  <url path="."/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="src/main/webapp/"/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="src/main/resources/"/>
+               </list>
+            </hash>
+         </list>
+         <list n="url-path"/>
+      </hash>
+   </hash>
+   <hash n="oracle.ide.model.TechnologyScopeConfiguration">
+      <list n="technologyScope">
+         <string v="Java"/>
+         <string v="XML"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
+      <value n="internalEncoding" v="UTF-8"/>
+      <value n="webIANAEncoding" v="UTF-8"/>
+   </hash>
+   <hash n="oracle.jdeveloper.model.PathsConfiguration">
+      <hash n="javaContentSet">
+         <list n="constituent-sets">
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="src/main/java/"/>
+               </list>
+            </hash>
+            <hash>
+               <list n="pattern-filters">
+                  <string v="+**"/>
+               </list>
+               <list n="url-path">
+                  <url path="src/main/jdev/"/>
+               </list>
+            </hash>
+         </list>
+         <list n="url-path"/>
+      </hash>
+   </hash>
+   <hash n="oracle.jdeveloper.runner.RunConfigurations">
+      <hash n="runConfigurationDefinitions">
+         <hash n="Default">
+            <value n="allowInput" v="true"/>
+            <value n="custom" v="false"/>
+            <value n="javaOptions" v="-javaagent:C:\apps\appengine-java-sdk-1.9.42\lib\agent\appengine-agent.jar -Xmx1024m -XX:PermSize=64M -XX:MaxPermSize=128M"/>
+            <value n="name" v="Default"/>
+            <url n="runDirectoryURL" path="target/test-1.0.0/"/>
+            <url n="targetURL" path="src/main/jdev/dev/StartDevAppServer.java"/>
+         </hash>
+      </hash>
+      <list n="runConfigurationList">
+         <string v="Default"/>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectLibraries">
+      <list n="exportedReferences">
+         <hash>
+            <url n="id" path="../../../system12.2.1.0.42.151011.0031/o.jdeveloper/appengine-1.9.42.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../system12.2.1.0.42.151011.0031/o.jdeveloper/servlet-api-2.5.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="WEB-LIBS"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+      <hash n="internalDefinitions">
+         <list n="libraryDefinitions">
+            <hash>
+               <list n="classPath">
+                  <url path="target/test-1.0.0/WEB-INF/lib/appengine-api-1.0-sdk-1.9.42.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/classmate-1.3.3.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/groovy-2.4.9.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/guava-18.0.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/hibernate-validator-5.3.4.Final.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/jackson-annotations-2.8.0.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/jackson-core-2.8.7.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/jackson-databind-2.8.7.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/javassist-3.21.0-GA.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/javax.inject-1.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/jcl-over-slf4j-1.7.24.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/jstl-1.2.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/jul-to-slf4j-1.7.24.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/log4j-over-slf4j-1.7.24.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/logback-classic-1.1.11.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/logback-core-1.1.11.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/objectify-5.1.12.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/ognl-3.0.8.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/slf4j-api-1.7.24.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/snakeyaml-1.17.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-aop-4.3.7.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-beans-4.3.7.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-boot-1.5.2.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-boot-autoconfigure-1.5.2.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-boot-legacy-1.0.1.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-boot-starter-1.5.2.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-boot-starter-logging-1.5.2.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-boot-starter-thymeleaf-1.5.2.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-boot-starter-tomcat-1.5.2.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-boot-starter-web-1.5.2.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-context-4.3.7.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-core-4.3.7.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-expression-4.3.7.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-social-config-1.1.4.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-social-core-1.1.4.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-social-facebook-2.0.3.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-social-web-1.1.4.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-web-4.3.7.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/spring-webmvc-4.3.7.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/springloaded-1.2.3.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/thymeleaf-2.1.5.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/thymeleaf-layout-dialect-1.4.0.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/thymeleaf-spring4-2.1.5.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/tomcat-embed-core-8.5.11.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/tomcat-embed-el-8.5.11.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/tomcat-embed-websocket-8.5.11.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/unbescape-1.1.0.RELEASE.jar" jar-entry=""/>
+                  <url path="target/test-1.0.0/WEB-INF/lib/validation-api-1.1.0.Final.jar" jar-entry=""/>
+               </list>
+               <value n="description" v="WEB-LIBS"/>
+               <value n="id" v="WEB-LIBS"/>
+            </hash>
+         </list>
+      </hash>
+      <hash n="jdkReference">
+         <url n="id" path="../../../system12.2.1.0.42.151011.0031/o.jdeveloper/1.7.0_79.jdk"/>
+         <value n="isJDK" v="true"/>
+         <value n="jdkVersion" v="1.7.0_79"/>
+      </hash>
+      <list n="libraryReferences">
+         <hash>
+            <url n="id" path="../../../system12.2.1.0.42.151011.0031/o.jdeveloper/appengine-1.9.42.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../system12.2.1.0.42.151011.0031/o.jdeveloper/servlet-api-2.5.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="WEB-LIBS"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+      </list>
+   </hash>
+   <hash n="oracle.jdevimpl.config.JProjectPaths">
+      <url n="outputDirectory" path="target/test-1.0.0/WEB-INF/classes/"/>
+   </hash>
+</jpr:project>

@@ -12,3 +12,12 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+
+
+/local.properties
+*.iml
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+target/

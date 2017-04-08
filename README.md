@@ -1,2 +1,3 @@
 # showcase-spring-social-appengine
-Spring Social (Facebook) on AppEngine
+Running Spring Social (Facebook) on AppEngine
+
